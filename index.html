@@ -295,9 +295,79 @@ article.card[data-code="7893946583385"] .product-img{
   margin:0 auto 16px;
 }
 
+
+/* V22 — informações do casamento */
+.event-details{
+  width:min(980px,calc(100% - 36px));
+  margin:0 auto 48px;
+  display:grid;
+  grid-template-columns:1fr 1fr 1.8fr;
+  gap:1px;
+  background:#c9b9aa;
+  border:1px solid #c9b9aa;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 14px 34px rgba(40,24,13,.09);
+}
+.event-detail{
+  min-height:112px;
+  padding:25px 24px;
+  background:rgba(248,245,239,.95);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:6px;
+  text-align:center;
+}
+.event-label{
+  font-size:9px;
+  letter-spacing:.22em;
+  color:#a67e66;
+  font-weight:700;
+}
+.event-detail strong{
+  color:#4b2e21;
+  font-family:"Cormorant Garamond",serif;
+  font-size:23px;
+  font-weight:600;
+}
+.event-detail span:not(.event-label){
+  color:#65584f;
+  font-size:12px;
+  line-height:1.45;
+}
+.event-location strong{font-size:25px}
+@media(max-width:760px){
+  .event-details{
+    grid-template-columns:1fr;
+    width:calc(100% - 28px);
+    margin-bottom:34px;
+  }
+  .event-detail{min-height:92px;padding:20px 18px}
+  .event-detail strong,.event-location strong{font-size:21px}
+}
+
 </style></head><body>
 <header class="top"><nav class="nav"><a class="brand" href="#inicio">Érica & Jonathan</a><div class="navlinks"><a href="#inicio">Início</a><a href="#lista">Lista</a><a href="#como">Como presentear</a></div></nav></header>
 <section class="hero" id="inicio"><div><div class="eyebrow">Nossa lista de presentes</div><h1>Érica <span class="and">&</span> Jonathan</h1><p>Estamos começando uma nova história juntos e ficaremos muito felizes em compartilhar este momento com você.</p><a class="cta" href="#lista">Ver lista de presentes</a></div></section>
+
+<section class="event-details">
+  <div class="event-detail">
+    <span class="event-label">DATA</span>
+    <strong>15 de novembro de 2026</strong>
+  </div>
+  <div class="event-detail">
+    <span class="event-label">HORÁRIO</span>
+    <strong>09 horas</strong>
+  </div>
+  <div class="event-detail event-location">
+    <span class="event-label">LOCAL</span>
+    <strong>VILLA BERNARDES</strong>
+    <span>Rua Divaldo Suruagy, 10.018 Q. 90</span>
+    <span>Conj. Village Campestre II - Cidade Universitária</span>
+  </div>
+</section>
+
 <section class="wrap" id="lista"><h2 class="section-title">Escolha um presente</h2><p class="section-sub">Os 110 itens da nossa lista, com fotos reais e ilustrativas para facilitar a identificação visual.</p>
 <div class="stats"><div class="stat"><strong>110</strong><span>itens</span></div><div class="stat"><strong>8</strong><span>categorias</span></div></div>
 <div class="controls"><input id="search" placeholder="Buscar por produto, marca ou código..."><select id="cat"><option value="">Todas as categorias</option><option value="Artigos p/Festas">Artigos p/Festas</option><option value="Bazar">Bazar</option><option value="Cama, Mesa e Banho">Cama, Mesa e Banho</option><option value="Eletro">Eletro</option><option value="Ferramentas">Ferramentas</option><option value="Limpeza">Limpeza</option><option value="Mobiliário">Mobiliário</option><option value="Utilidades">Utilidades</option></select><select id="sort"><option value="default">Ordem da lista</option><option value="az">A → Z</option><option value="low">Menor preço</option><option value="high">Maior preço</option></select></div>
